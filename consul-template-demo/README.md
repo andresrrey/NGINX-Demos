@@ -4,7 +4,6 @@ This demo shows NGINX being used in conjuction with Consul, a popular Service di
 
 This demo is based on docker and spins' up the following containers:
 
-*   [Consul](http://www.consul.io) for service discovery
 *   [Registrator](https://github.com/gliderlabs/registrator) to register services with Consul. Registrator monitors for containers being started and stopped and updates Consul when a container changes state.
 *   [nginxdemos/hello](https://hub.docker.com/r/nginxdemos/hello/) as a NGINX webserver that serves a simple page containing its hostname, IP address and port, request URI, local time of the webserver and the client IP address. This is to simulate backend servers NGINX will be load balancing across.
 *   [NGINX](http://nginx.org/) Open Source.
